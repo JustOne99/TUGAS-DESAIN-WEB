@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Desain Web</title>
+  </head>
+  <style>
+   
+  </style>
+
+  <body>
+    <div class="container">
+    <h2>Hitung Luas Segitiga</h2>
+    <form>
+      <label for="alas">Nilai Alas (cm)</label>
+      <input type="text" id="alas" />
+
+      <label for="tinggi">Nilai Tinggi (cm)</label>
+      <input type="text" id="tinggi" />
+    </div>
+
+      <div id="hasil">Hasilnya</div>
+
+      <button id="btnhitung" type="button" onclick="hitungLuas()">
+        Hitung Luas
+      </button>
+    </form>
+
+    <script>
+      function hitungLuas() {
+        let alas = Number(document.getElementById("alas").value);
+        let tinggi = Number(document.getElementById("tinggi").value);
+
+        let luas = 0.5 * alas * tinggi;
+
+        let hsl = "Hitung Luas Segitiga dengan Nilai <br>";
+        hsl += "Alas = " + alas + " cm <br>";
+        hsl += "Tinggi = " + tinggi + " cm <br>";
+        hsl += "---------------------------------- <br>";
+        hsl += "Luas = ½ x Alas x Tinggi <br>";
+        hsl += "Luas = ½ x " + alas + " x " + tinggi + "<br>";
+        hsl += "Luas = " + luas + " cm<sup>2</sup><br>";
+
+        document.getElementById("hasil").innerHTML = hsl;
+      }
+    </script>
+  </body>
+</html>
