@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JustinVibes.com</title>
+    <link rel="icon" href="image/log.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Justinus Marselino Kabosu</h1>
+      <p>Photografer | Designer</p>
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#portfolio">Portofolio</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+      <img class="imgme" src="image/sy.jpg" alt="" />
+      <h2>Tentang Saya</h2>
+
+      <p>
+        Saya adalah seorang Photografer yang memiliki pengalaman dalam
+        photograpy, dan passions dalam desain saya yang minimalis dan modern. serta juga
+        saya suka dengan teknologi dan tentang cybersecurity.
+      </p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portofolio Proyek</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Proyek 1</h3>
+          <p>
+            Proyek desain Photoshop ini menciptakan visual menarik untuk paket
+            liburan, menonjolkan destinasi wisata dan penawaran dengan elemen
+            desain yang menggugah minat.
+          </p>
+          <img class="img" src="image/poster.PNG" alt="" />
+        </div>
+        <div class="project-card">
+          <h3>Proyek 2</h3>
+          <p>
+            Proyek fotografi ini menangkap keindahan senyum wanita dalam momen
+            alami, menyampaikan emosi kebahagiaan dan kehangatan yang universal.
+          </p>
+          <img class="imgcw" src="image/cw.JPG" alt="" />
+        </div>
+        <div class="project-card">
+          <h3>Proyek 3</h3>
+          <p>
+            Proyek fotografi ini menyoroti keindahan dan kekuatan mistis Barong
+            Bali, menggambarkan detail artistik dan spiritualitas yang mendalam
+            dari simbol pelindung budaya ini.
+          </p>
+          <img class="imgp" src="image/puri.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak Saya</h2>
+      <form id="contactForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+      <p id="confirmationMessage" style="display: none">
+        Pesan terkirim! Terima kasih telah menghubungi saya.
+      </p>
+    </section>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

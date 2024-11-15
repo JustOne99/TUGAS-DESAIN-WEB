@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slide Show</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+ 
+  <body>
+    <h1>Slide Show</h1>
+    <div class="slideshow-container">
+      <div class="slides fade"></div>
+      <img src="image/h.jpg" alt="slider 1" />
+    </div>
+    <div class="slides fade"></div>
+      <img src="image/images.jpg" alt="slider 2" />
+    </div>
+    <div class="slides fade"></div>
+      <img src="image/u.jpg" alt="slider 3" />
+    </div>
+    <div class="slides fade"></div>
+      <img src="image/j.jpg" alt="slider 4" />
+    </div>
+
+    <button onclick="alert('Halo Dunia!');">prees me</button>
+    <script defer type="text/javascript" src="/main.js"></script>
+    <script>
+        var slideindex = 1
+        slideshow ()
+        function slideshow(){
+            var i
+            var sd = document.getElementsByClassName("slides")
+            console.log("jumlahslides: "+ sd.length)
+            for( i= 0;i<sd.length; i++){
+                sd[i].style.display = "none"
+            }
+            if(slideindex> sd.length){
+                slideindex = 1
+            }
+            sd[slideindex-1].style.display= "block"
+            slideindex++
+           setTimeout(slideshow , 2000)
+        }
+    </script>
+  </body>
+</html>
